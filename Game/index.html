@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Language Learning Flashcards</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Language Learning Flashcards</h1>
+        <nav>
+            <button id="create-flashcards">Create Flashcards</button>
+            <button id="review-flashcards">Review Flashcards</button>
+            <button id="quiz-yourself">Quiz Yourself</button>
+        </nav>
+    </header>
+    <main>
+        <section id="flashcard-creation">
+            <form id="flashcard-form">
+                <input type="text" id="front" placeholder="Word/Phrase" required>
+                <input type="text" id="back" placeholder="Translation/Definition" required>
+                <button type="submit">Add Flashcard</button>
+            </form>
+        </section>
+        <section id="review-section" class="hidden">
+            <div id="flashcard-container"></div>
+        </section>
+        <section id="quiz-section" class="hidden">
+            <div id="quiz-container">
+                <h2 id="quiz-word"></h2>
+                <input type="text" id="quiz-answer" placeholder="Type your answer here">
+                <button id="submit-answer">Submit</button>
+                <div id="feedback"></div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
